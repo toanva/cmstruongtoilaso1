@@ -51,16 +51,18 @@ var datatable = $('#grvResult').DataTable({
     columns: [
         { data: 'Name', defaultContent: "" },
         { data: 'CandidatesCode', defaultContent: "" },
-        {
-            data: 'Url1', render: function (data, type, row, meta) {
-                return data !== undefined ? '<img class="img-responsive center-block img-rounded" alt="Responsive image" src="' + data + '" height="200" width="200">' : '';
-            }
-        },
-        {
-            data: 'Url2', render: function (data, type, row, meta) {
-                return data !== undefined ? '<img class="img-responsive center-block img-rounded" alt="Responsive image" src="' + data + '" height="200"  width="200">' : '';
-            }
-        },
+        { data: 'Phone', defaultContent: "" },
+        { data: 'Schools', defaultContent: "" },
+        //{
+        //    data: 'Url1', render: function (data, type, row, meta) {
+        //        return data !== undefined ? '<img class="img-responsive center-block img-rounded" alt="Responsive image" src="' + data + '" height="200" width="200">' : '';
+        //    }
+        //},
+        //{
+        //    data: 'Url2', render: function (data, type, row, meta) {
+        //        return data !== undefined ? '<img class="img-responsive center-block img-rounded" alt="Responsive image" src="' + data + '" height="200"  width="200">' : '';
+        //    }
+        //},
         //{
         //    data: 'Name', render: function (data, type, row, meta) {
         //        return '<a href="#" onclick="ShowDetail(' + row._id + ')">' + data + '</a>';
