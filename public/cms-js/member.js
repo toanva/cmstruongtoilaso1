@@ -53,6 +53,8 @@ var datatable = $('#grvResult').DataTable({
         { data: 'CandidatesCode', defaultContent: "" },
         { data: 'Phone', defaultContent: "" },
         { data: 'Schools', defaultContent: "" },
+        { data: 'PlaceOfContest', defaultContent: "" },
+        { data: 'TalentName', defaultContent: "" },
         //{
         //    data: 'Url1', render: function (data, type, row, meta) {
         //        return data !== undefined ? '<img class="img-responsive center-block img-rounded" alt="Responsive image" src="' + data + '" height="200" width="200">' : '';
