@@ -48,6 +48,12 @@ var datatable = $('#grvResult').DataTable({
         },
         dataSrc: ""
     },
+    columnDefs: [
+        {
+            targets: [6],
+            visible: false
+        }
+    ],
     columns: [
         { data: 'Name', defaultContent: "" },
         { data: 'CandidatesCode', defaultContent: "" },
@@ -70,6 +76,11 @@ var datatable = $('#grvResult').DataTable({
         //        return '<a href="#" onclick="ShowDetail(' + row._id + ')">' + data + '</a>';
         //    }
         //},
+        {
+            data: 'InsertDate', render: function (data, type, row, meta) {
+                return formatDateDetail1(data);
+            }
+        },
         {
             data: 'InsertDate', render: function (data, type, row, meta) {
                 return GetBirthDay(data);
